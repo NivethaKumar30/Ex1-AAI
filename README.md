@@ -1,5 +1,5 @@
-<H3> Name </H3>
-<H3>Register No.</H3>
+<H3> Name :NIVETHA K</H3>
+<H3>Register No. 212222230102</H3>
 <H3> Experiment 1</H3>
 <H3>DATE:</H3>
 <H1 ALIGN=CENTER> Implementation of Bayesian Networks</H1>
@@ -67,7 +67,7 @@ def probs(data, child, parent1=None, parent2=None):
                 prob=pd.crosstab([data[parent1],data[parent2]],data[child], margins=False, normalize='index').sort_index().to_numpy().reshape(-1).tolist()
     else: print("Error in Probability Frequency Calculations")
     return prob
-    ```
+```
 Function to Automatically Calculate Probabilities:
 ```
 H9am = BbnNode(Variable(0, 'H9am', ['<=60', '>60']), probs(df, child='Humidity9amCat'))
